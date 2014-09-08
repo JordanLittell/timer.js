@@ -4,8 +4,8 @@
 
 <style type="text/css">
 	canvas{
-		height:200px;
-		width: 400px;
+		height:250px;
+		width: 500px;
 		margin: 0 10%;
 		background: #F8F8FF;
 	}
@@ -21,11 +21,8 @@
 	var canvas = document.getElementsByTagName("canvas")[0];
 	var ctx = canvas.getContext('2d');
 	var radius = Math.floor(canvas.width/4);
-	var clock = new Timer.Clock(radius, ctx);
-	clock.draw();
-	clock.animate();
-	clock.renderTimeString();
-
+	var clock = new Timer.Clock(radius, ctx).start();
+	
 </script>
 
 </html>
