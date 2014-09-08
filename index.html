@@ -4,20 +4,22 @@
 
 <style type="text/css">
 	canvas{
-		height:600px;
-		width: 80%;
+		height:400px;
+		width: 800px;
 		margin: 0 10%;
 		background: #F8F8FF;
 	}
 </style>
 <canvas></canvas>
 
-<script type="text/javascript" src = "lib/timer.js"></script>
+<script type="text/javascript" src="lib/timer.js"></script>
 <script type="text/javascript">
 	var canvas = document.getElementsByTagName("canvas")[0];
 	var ctx = canvas.getContext('2d');
-	var radius = Math.floor(canvas.width/2);
-	var clock = new Clock(radius, ctx);
+	var radius = Math.floor(canvas.width/4);
+	var clock = new Timer.Clock(radius, ctx);
+	clock.draw();
+	clock.animate();
 
 </script>
 
