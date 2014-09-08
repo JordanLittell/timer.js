@@ -4,12 +4,16 @@
 
 <style type="text/css">
 	canvas{
-		height:400px;
-		width: 800px;
+		height:200px;
+		width: 400px;
 		margin: 0 10%;
 		background: #F8F8FF;
 	}
+	h1{
+		text-align: center;
+	}
 </style>
+<h1>JS Timer</h1>
 <canvas></canvas>
 
 <script type="text/javascript" src="lib/timer.js"></script>
@@ -20,6 +24,7 @@
 	var clock = new Timer.Clock(radius, ctx);
 	clock.draw();
 	clock.animate();
+	clock.renderTimeString();
 
 </script>
 
